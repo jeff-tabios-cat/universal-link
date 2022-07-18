@@ -1,0 +1,10 @@
+{
+  "applinks": {
+      "details": [
+      {
+        "appID": "XYZ12389S.com.poc.urbanlegend.UniversalLink",
+        "paths": ["*"]
+      }
+    ]
+  }
+}
