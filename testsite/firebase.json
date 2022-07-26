@@ -1,0 +1,100 @@
+{
+  "hosting": [
+    {
+      "target": "ul-jeff",
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/node_modules/**"
+      ],
+      "headers": [
+        {
+          "source": "/.well-known/*",
+          "headers": [
+            {"key": "Content-Type", "value": "application/json"}
+          ]
+        }
+      ],
+      "rewrites": [ 
+        {
+          "source": "**",
+          "destination": "/index.html",
+          "content-type": "text/html",
+          "code":200
+        }
+      ]
+    },
+    {
+      "target": "universal-link-jeff",
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/node_modules/**"
+      ],
+      "headers": [
+        {
+          "source": "/.well-known/*",
+          "headers": [
+            {"key": "Content-Type", "value": "application/json"}
+          ]
+        }
+      ],
+      "rewrites": [ 
+        {
+          "source": "**",
+          "destination": "/index.html",
+          "content-type": "text/html",
+          "code":200
+        },
+        {
+          "source": "/apple-app-site-association",
+          "destination": "/.well-known/apple-app-site-association",
+          "content-type": "application/json",
+          "code":200
+        }
+      ]
+    },
+    {
+      "target": "universal-link-8018f",
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/node_modules/**"
+      ],
+      "headers": [
+        {
+          "source": "/.well-known/*",
+          "headers": [
+            {"key": "Content-Type", "value": "application/json"}
+          ]
+        },
+        {
+          "source": "/*",
+          "headers": [
+            {"key": "Content-Type", "value": "application/json"}
+          ]
+        },
+        {
+          "source": "/*.@(html)",
+          "headers": [
+            {"key": "Content-Type", "value": "text/html"}
+          ]
+        }
+      ],
+      "rewrites": [ 
+        {
+          "source": "**",
+          "destination": "/index.html",
+          "content-type": "text/html",
+          "code":200
+        },
+        {
+          "source": "/apple-app-site-association",
+          "destination": "/.well-known/apple-app-site-association",
+          "content-type": "application/json",
+          "code":200
+        }
+      ]
+    }
+  ]
+}

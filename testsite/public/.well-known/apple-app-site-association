@@ -1,0 +1,10 @@
+{
+  "applinks": {
+      "details": [
+      {
+        "appID": "6RE8S7MP65.com.codeandtheory.universal-link-test",
+        "paths": ["*"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "default": "universal-link-8018f"
+  },
+  "targets": {
+    "universal-link-8018f": {
+      "hosting": {
+        "universal-link-8018f": [
+          "universal-link-8018f",
+          "universal-link-jeff.web.app"
+        ],
+        "universal-link-jeff": [
+          "universal-link-jeff"
+        ],
+        "ul-jeff": [
+          "ul-jeff"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
